@@ -41,6 +41,7 @@ int sum(Complex c)
     cout<<" I am a Friend Function 🎃🎃" <<endl;
     cout<<" I have access to private members !! "<<endl;
     return c.a + c.b;
+    cout<<" Looks like I can't get them directly !!"<<endl;
 }
 
 int main()
@@ -53,7 +54,7 @@ int main()
 
     cout<<c2.greater()<<endl;
     cout<<sum(c3)<<endl;
-    print();
+    print(c2);
     return 0;
 }
 

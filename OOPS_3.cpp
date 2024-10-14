@@ -43,6 +43,16 @@ Complex Complex::add(Complex n)
 
 }
 
+/*
+
+This Function can access the private var of the object C
+void manipulate_data(Complex C)
+{
+    C.a = C.a + 1;
+    C.b = C.b + 1;
+}
+
+*/
 int main()
 {
     Complex n1,n2,n3;
@@ -60,7 +70,9 @@ int main()
             ** Instance Member Variables
             ** Instance Member Functions
 
-        ## These stuffs are behaviours of an Object
+    
+            Complex C;
+            C.set_data(2,9);
     */
 }
 

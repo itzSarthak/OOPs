@@ -29,6 +29,7 @@ void fun(A obj1,B obj2)
     /*
         This function is friend of A and B
         which means it can access the private memebers of both the classes.
+        We don't have speciality like this to any other function .
     */
     cout<<"sum : "<<obj1.a + obj2.b<<endl;
 }

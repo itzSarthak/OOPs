@@ -2,7 +2,7 @@
 /*
     Structures
 
-    ## Structure is a collection of similar elements.
+    ## Structure is a collection of dissimilar elements.
     ## Structure is a way to group variables.
     ## Structure is used to create data type.
 
@@ -26,6 +26,7 @@ int main()
     book b1 = {100,"C++ Made Easy",450.75};
     book b2;
     b2.bookid = 211;
+
 
     /*
         b2.title = "Object Oriented Programming";

@@ -82,7 +82,7 @@ class Complex
 
 
         ## Why we need Destructor ?
-            Destructor is the last function before object gets destroy,
+            Destructor is the last function which is being invoked before an object gets destroy,
             so if some memory allocation are there we should free that !!
 
             ## It invoked implicitly when object is going to destroy.

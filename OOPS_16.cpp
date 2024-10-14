@@ -14,6 +14,7 @@ class Person
         void fun()=0;
 
         ** Late Binding of "Do Nothing Function" is Necessary.
+        ** Because if we don't we may access the function using Early Binding.
     */
     virtual void fun()=0;
 
@@ -33,7 +34,7 @@ class Student : public Person
 
    public:
     void fun()
-    {}r
+    {};
 };
 /*
     But,Why we need Abstract Classes ?
@@ -41,6 +42,8 @@ class Student : public Person
         There are moments in projects when we need to add certain common attributes
         in each of the classes,so instead of declaring a variable in each class we can 
         define it in parent class (abstract) and inherite from there.
+
+        Basically they are used for Generalisation Purpose !!
 */
 int main()
 {

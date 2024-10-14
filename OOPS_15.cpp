@@ -5,7 +5,9 @@ class A
 {
     public:
     void f1(){}
-     void f2(){cout<<"Parent Class !!"<<endl;}
+    virtual void f2(){cout<<"Parent Class !!"<<endl;}
+    // Now all the function with same signature as f2()
+    // became virtual function.
 };
 class B: public A
 {
@@ -28,10 +30,10 @@ int main()
         This should call f1() of class B but due to early binding f1() of class A is being called.
         Bcz at compile ptr is of type 'A' !!
 
-        Early Binding --> type of Pointer.
+        Early Binding --> type of Pointer / Object.
         Late Binding --> content of Pointer.
 
-        To avoid that we can use virtual keyword in parent class.
+        To avoid that we can use virtual keyword in the function of parent class.
         Now all the function with same name and signature became virtual function.
 
 
